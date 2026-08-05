@@ -105,7 +105,7 @@ class TavilySearchEngine(BaseSearchEngine):
             func = functools.partial(tavily_client.search, **search_params)
             search_response = await loop.run_in_executor(None, func)
 
-            results = []
+            results: list[dict[str, Any]] = []
             if search_response and "results" in search_response:
                 results.extend(
                     {

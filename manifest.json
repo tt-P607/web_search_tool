@@ -4,7 +4,22 @@
     "description": "网络搜索工具插件，支持多种搜索引擎（DeepSeek/Exa/Tavily/Metaso/DuckDuckGo/Bing/SearXNG/Serper）",
     "author": "minecraft1024a",
     "license": "GPL-3.0",
-    "homepage": "https://github.com/MoFox-Studio/Neo-MoFox",
+    "homepage": "https://github.com/tt-P607/web_search_tool",
+    "categories": "tool",
+    "tags": [
+        "search",
+        "web",
+        "tool",
+        "service",
+        "deepseek",
+        "exa",
+        "tavily",
+        "duckduckgo",
+        "bing",
+        "searxng",
+        "serper",
+        "metaso"
+    ],
     "keywords": [
         "search",
         "web",
