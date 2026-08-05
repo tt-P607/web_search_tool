@@ -5,7 +5,7 @@
     "author": "minecraft1024a",
     "license": "GPL-3.0",
     "homepage": "https://github.com/tt-P607/web_search_tool",
-    "categories": "tool",
+    "categories": ["tool"],
     "tags": [
         "search",
         "web",
