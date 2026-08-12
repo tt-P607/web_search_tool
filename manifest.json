@@ -1,8 +1,8 @@
 {
   "name": "web_search_tool",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "网络搜索工具插件，支持多种搜索引擎（DeepSeek/Exa/Tavily/Metaso/DuckDuckGo/Bing/SearXNG/Serper）",
-  "author": "minecraft1024a",
+  "author": "言柒",
   "license": "GPL-3.0",
   "homepage": "https://github.com/tt-P607/web_search_tool",
   "categories": [
