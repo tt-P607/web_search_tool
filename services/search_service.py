@@ -41,7 +41,6 @@ class SearchService(BaseService):
 
     name: str = "web_search"
     description: str = "网络搜索服务，提供多引擎搜索功能"
-    version: str = "1.0.0"
 
     def __init__(self, plugin: "BasePlugin") -> None:
         """

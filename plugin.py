@@ -32,8 +32,6 @@ class WebSearchPlugin(BasePlugin):
 
     # 插件基本信息（必需），plugin_name 须与 manifest.json 中的 name 一致
     plugin_name: str = "web_search_tool"
-    plugin_description: str = "网络搜索和 URL 解析工具插件"
-    plugin_version: str = "1.0.0"
 
     # 插件配置
     configs: list[type] = [WebSearchConfig]

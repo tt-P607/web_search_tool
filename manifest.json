@@ -1,81 +1,83 @@
 {
-    "name": "web_search_tool",
-    "version": "1.0.0",
-    "description": "网络搜索工具插件，支持多种搜索引擎（DeepSeek/Exa/Tavily/Metaso/DuckDuckGo/Bing/SearXNG/Serper）",
-    "author": "minecraft1024a",
-    "license": "GPL-3.0",
-    "homepage": "https://github.com/tt-P607/web_search_tool",
-    "categories": ["tool"],
-    "tags": [
-        "search",
-        "web",
-        "tool",
-        "service",
-        "deepseek",
-        "exa",
-        "tavily",
-        "duckduckgo",
-        "bing",
-        "searxng",
-        "serper",
-        "metaso"
-    ],
-    "keywords": [
-        "search",
-        "web",
-        "tool",
-        "service",
-        "deepseek",
-        "exa",
-        "tavily",
-        "duckduckgo",
-        "bing",
-        "searxng",
-        "serper",
-        "metaso"
-    ],
-    "dependencies": {
-        "plugins": [],
-        "components": []
+  "name": "web_search_tool",
+  "version": "1.0.1",
+  "description": "网络搜索工具插件，支持多种搜索引擎（DeepSeek/Exa/Tavily/Metaso/DuckDuckGo/Bing/SearXNG/Serper）",
+  "author": "minecraft1024a",
+  "license": "GPL-3.0",
+  "homepage": "https://github.com/tt-P607/web_search_tool",
+  "categories": [
+    "tool"
+  ],
+  "tags": [
+    "search",
+    "web",
+    "tool",
+    "service",
+    "deepseek",
+    "exa",
+    "tavily",
+    "duckduckgo",
+    "bing",
+    "searxng",
+    "serper",
+    "metaso"
+  ],
+  "keywords": [
+    "search",
+    "web",
+    "tool",
+    "service",
+    "deepseek",
+    "exa",
+    "tavily",
+    "duckduckgo",
+    "bing",
+    "searxng",
+    "serper",
+    "metaso"
+  ],
+  "dependencies": {
+    "plugins": [],
+    "components": []
+  },
+  "python_dependencies": [
+    "httpx",
+    "aiohttp",
+    "tavily-python",
+    "exa-py",
+    "asyncddgs",
+    "orjson",
+    "beautifulsoup4"
+  ],
+  "api_version": {
+    "log_api": "1.0.0",
+    "service_api": "1.0.0"
+  },
+  "dependencies_required": true,
+  "include": [
+    {
+      "component_type": "tool",
+      "component_name": "web_search",
+      "description": "多引擎结构化网络搜索工具，供 LLM 调用以获取实时信息",
+      "dependencies": []
     },
-    "python_dependencies": [
-        "httpx",
-        "aiohttp",
-        "tavily-python",
-        "exa-py",
-        "asyncddgs",
-        "orjson",
-        "beautifulsoup4"
-    ],
-    "api_version": {
-        "log_api": "1.0.0",
-        "service_api": "1.0.0"
+    {
+      "component_type": "tool",
+      "component_name": "deepseek_web_search",
+      "description": "DeepSeek 服务端联网搜索工具，返回完整自然语言回答",
+      "dependencies": []
     },
-    "dependencies_required": true,
-    "include": [
-        {
-            "component_type": "tool",
-            "component_name": "web_search",
-            "description": "多引擎结构化网络搜索工具，供 LLM 调用以获取实时信息",
-            "dependencies": []
-        },
-        {
-            "component_type": "tool",
-            "component_name": "deepseek_web_search",
-            "description": "DeepSeek 服务端联网搜索工具，返回完整自然语言回答",
-            "dependencies": []
-        },
-        {
-            "component_type": "service",
-            "component_name": "web_search",
-            "description": "网络搜索服务，供其他插件调用",
-            "dependencies": []
-        }
-    ],
-    "config": {
-        "config_file": "config.py",
-        "config_class": "WebSearchConfig"
-    },
-    "entry_point": "plugin.py",
-    "min_core_version": "1.0.0"
+    {
+      "component_type": "service",
+      "component_name": "web_search",
+      "description": "网络搜索服务，供其他插件调用",
+      "dependencies": []
+    }
+  ],
+  "config": {
+    "config_file": "config.py",
+    "config_class": "WebSearchConfig"
+  },
+  "entry_point": "plugin.py",
+  "min_core_version": "1.0.0"
 }
